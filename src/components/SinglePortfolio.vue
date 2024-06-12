@@ -4,6 +4,17 @@
         name: 'SinglePortfolio',
         props: {
             portfolioInfo: Object,
+        },
+
+        methods: {
+            textCut(summary) {
+                if(summary.length > 100) {
+                    return summary.substr(0, 99) + '...';
+                } 
+                
+                return summary
+            
+            }
         }
     }
 
@@ -20,7 +31,7 @@
                 <div class="my-2" v-if="portfolioInfo.type" >
                     <strong>Types:</strong> {{ portfolioInfo.type.name }}
                 </div>
-                <p class="card-text">{{ portfolioInfo.summary }}</p>
+                <p class="card-text">{{ textCut(portfolioInfo.summary) }}</p>
                 <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
         </div>
