@@ -1,8 +1,13 @@
 <script>
     import axios from 'axios';
+    import SinglePortfolio from './SinglePortfolio.vue';
 
     export default {
         name: 'PortfolioCard',
+        components: {
+            SinglePortfolio,
+        },
+
         data() {
             return {
                 portfolios: [] 
@@ -31,15 +36,7 @@
     </div>
     <div class="container d-flex flex-wrap gap-3">
         <div class="row">
-            <div v-for="portfolio in portfolios" class="col-4">
-                <div  class="card my-3">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ portfolio.name }}</h5>
-                        <p class="card-text">{{ portfolio.summary }}</p>
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                    </div>
-                </div>
-            </div>
+            <SinglePortfolio v-for="portfolio in portfolios" :portfolioInfo="portfolio"></SinglePortfolio>
         </div>
     </div>
     
