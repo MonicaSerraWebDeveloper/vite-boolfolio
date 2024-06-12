@@ -1,18 +1,23 @@
 <script>
 
-    export default {
+    import PortfolioCard from './components/PortfolioCard.vue';
 
+    export default {
+        components: {
+            PortfolioCard
+        }
     }
 
 </script>
 
 <template>
 
-    <h1>ciao monica</h1>
+    <PortfolioCard></PortfolioCard>
 
 </template>
 
 <style lang="scss">
+
     @use './style/generic';
 
 </style>
