@@ -36,7 +36,7 @@
     </div>
     <div class="container d-flex flex-wrap gap-3">
         <div class="row">
-            <SinglePortfolio v-for="portfolio in portfolios" :portfolioInfo="portfolio"></SinglePortfolio>
+            <SinglePortfolio v-for="portfolio in portfolios" :portfolioInfo="portfolio" :key="portfolio.id"></SinglePortfolio>
         </div>
     </div>
     
