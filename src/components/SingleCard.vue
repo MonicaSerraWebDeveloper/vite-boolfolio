@@ -1,7 +1,7 @@
 <script>
 
     export default {
-        name: 'SinglePortfolio',
+        name: 'SingleCard',
         props: {
             portfolioInfo: Object,
         },

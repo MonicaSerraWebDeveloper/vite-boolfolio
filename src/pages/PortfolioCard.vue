@@ -1,11 +1,11 @@
 <script>
     import axios from 'axios';
-    import SinglePortfolio from '../components/SinglePortfolio.vue';
+    import SingleCard from '../components/SingleCard.vue';
 
     export default {
         name: 'PortfolioCard',
         components: {
-            SinglePortfolio,
+            SingleCard,
         },
 
         data() {
@@ -36,7 +36,7 @@
     </div>
     <div class="container d-flex flex-wrap gap-3">
         <div class="row">
-            <SinglePortfolio v-for="portfolio in portfolios" :portfolioInfo="portfolio" :key="portfolio.id"></SinglePortfolio>
+            <SingleCard v-for="portfolio in portfolios" :portfolioInfo="portfolio" :key="portfolio.id"></SingleCard>
         </div>
     </div>
     
