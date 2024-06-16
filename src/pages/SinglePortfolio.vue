@@ -30,6 +30,9 @@
     <div class="container">
         <div v-if="portfolio">
             <h2>{{ portfolio.name }}</h2>
+            <div v-if="portfolio.cover_image">
+                <img :src="`http://127.0.0.1:8000/storage/{portfolio.cover_image}`" alt="">
+            </div>
             <p v-if="portfolio.summary">{{ portfolio.summary }}</p>
         </div>
     </div>

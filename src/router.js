@@ -13,7 +13,7 @@ const router = createRouter ({
             component: AppHome
         }, 
         {
-            path: '/portfolio',
+            path: '/portfolio/',
             name: 'portfolio',
             component: PortfolioCard
         },

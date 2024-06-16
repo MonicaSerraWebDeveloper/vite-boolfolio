@@ -32,7 +32,7 @@
                     <strong>Types:</strong> {{ portfolioInfo.type.name }}
                 </div>
                 <p class="card-text">{{ textCut(portfolioInfo.summary) }}</p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                <router-link :to="{ name: 'single-portfolio', params: { slug: portfolioInfo.slug } }"  class="btn btn-primary">Scopri di più</router-link>
             </div>
         </div>
     </div>
