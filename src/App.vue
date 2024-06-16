@@ -1,10 +1,12 @@
 <script>
 
     import PortfolioCard from './components/PortfolioCard.vue';
+    import AppHeader from './components/AppHeader.vue';
 
     export default {
         components: {
-            PortfolioCard
+            PortfolioCard,
+            AppHeader
         }
     }
 
@@ -12,7 +14,8 @@
 
 <template>
 
-    <PortfolioCard></PortfolioCard>
+    <AppHeader></AppHeader>
+    <router-view></router-view>
 
 </template>
 
