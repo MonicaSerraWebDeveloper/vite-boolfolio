@@ -1,11 +1,9 @@
 <script>
 
-    import PortfolioCard from './components/PortfolioCard.vue';
     import AppHeader from './components/AppHeader.vue';
 
     export default {
         components: {
-            PortfolioCard,
             AppHeader
         }
     }

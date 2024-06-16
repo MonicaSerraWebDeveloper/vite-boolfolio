@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import AppHome from './pages/AppHome.vue';
-import AppPortfolio from './pages/AppPortfolio.vue';
+import PortfolioCard from './pages/PortfolioCard.vue';
 
 const router = createRouter ({
     history: createWebHistory(),
@@ -14,7 +14,7 @@ const router = createRouter ({
         {
             path: '/portfolio',
             name: 'portfolio',
-            component: AppPortfolio
+            component: PortfolioCard
         }
 
     ]

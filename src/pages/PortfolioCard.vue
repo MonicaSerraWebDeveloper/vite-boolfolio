@@ -1,6 +1,6 @@
 <script>
     import axios from 'axios';
-    import SinglePortfolio from './SinglePortfolio.vue';
+    import SinglePortfolio from '../components/SinglePortfolio.vue';
 
     export default {
         name: 'PortfolioCard',
